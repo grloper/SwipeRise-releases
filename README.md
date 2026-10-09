@@ -26,6 +26,13 @@ Both APKs are debug-signed with the repo keystore (per the v5.0.0 release notes)
 
 Requires Android 10 (API 29) or newer. Google sign-in in the Play flavor requires the owner's OAuth setup for the installed app's package and signing certificate.
 
+## Screenshots
+
+| | | | |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/screenshots/01-library-scan.jpg" width="200" alt="Library scan"> | <img src="docs/screenshots/02-backup-progress.jpg" width="200" alt="Backup progress"> | <img src="docs/screenshots/03-backup-options.jpg" width="200" alt="Backup destination options"> | <img src="docs/screenshots/04-staging-cleanup.jpg" width="200" alt="Staging sheet cleanup modes"> |
+| Library scan with categories; "Scanning does not delete files." | Backup progress to Google Photos. | Backup destination options: Google Photos, Google Drive, or Folder or other cloud. | Staging sheet with 30-Day OS Trash and Permanent Delete cleanup modes. |
+
 ## Privacy
 
 See the [privacy policy](PRIVACY_POLICY.md). The Play flavor can send files to your own Google Drive / Google Photos only when you opt in; the F-Droid flavor requests no internet access.
