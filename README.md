@@ -9,14 +9,15 @@ Per the v5.0.0 release notes, cleanup is unlocked: Android Trash is always avail
 
 ## Download
 
-**Latest version: v5.0.0** · [Always get the newest release](https://github.com/grloper/SwipeRise-releases/releases/latest) · [All releases](https://github.com/grloper/SwipeRise-releases/releases)
+**Latest version: v5.1.0** · [Always get the newest release](https://github.com/grloper/SwipeRise-releases/releases/latest) · [All releases](https://github.com/grloper/SwipeRise-releases/releases)
 
 | File | What it is |
 |------|------------|
-| [`SwipeRise-5.0.0-fdroid-offline.apk`](https://github.com/grloper/SwipeRise-releases/releases/download/v5.0.0/SwipeRise-5.0.0-fdroid-offline.apk) | Offline F-Droid flavor. SHA-256 `b6d9ce8299269494b153eccb24c3813b78b8f77084fc0f179512c602e69ea344` |
-| [`SwipeRise-5.0.0-play-google-backup.apk`](https://github.com/grloper/SwipeRise-releases/releases/download/v5.0.0/SwipeRise-5.0.0-play-google-backup.apk) | Play flavor with optional Google backup. SHA-256 `92875588d7a8d46413e965e84ca226fb04dfb01f3abb9fafa57899e860d4c775` |
+| [`SwipeRise-5.1.0-fdroid-offline.apk`](https://github.com/grloper/SwipeRise-releases/releases/download/v5.1.0/SwipeRise-5.1.0-fdroid-offline.apk) | Offline F-Droid flavor. SHA-256 `71eafb764b3991ac64775399103ad16f533c640a02019befc991ab1e810a98c1` |
+| [`SwipeRise-5.1.0-play-google-backup.apk`](https://github.com/grloper/SwipeRise-releases/releases/download/v5.1.0/SwipeRise-5.1.0-play-google-backup.apk) | Play flavor with optional Google backup. SHA-256 `4143b64f7f218846f3d6d255fbedfccc8a3aebc2923738f9bf9e26d3a58a95f1` |
+| [`SHA256SUMS.txt`](https://github.com/grloper/SwipeRise-releases/releases/download/v5.1.0/SHA256SUMS.txt) | Checksums for the two APKs above. |
 
-Both APKs are debug-signed with the repo keystore (per the v5.0.0 release notes) and can be installed directly. They are not Play Store builds. If this table is behind, the [latest release](https://github.com/grloper/SwipeRise-releases/releases/latest) page is authoritative.
+Both APKs are debug-signed with the repo keystore (same signing certificate as v5.0.0, so v5.1.0 installs as an update over v5.0.0 and keeps your data). They are not Play Store builds. v5.1.0 was verified with JVM tests and local builds only; it has not been run on a device. Previous version: [v5.0.0](https://github.com/grloper/SwipeRise-releases/releases/tag/v5.0.0). If this table is behind, the [latest release](https://github.com/grloper/SwipeRise-releases/releases/latest) page is authoritative.
 
 ## Install
 
@@ -32,6 +33,15 @@ Requires Android 10 (API 29) or newer. Google sign-in in the Play flavor require
 |:---:|:---:|:---:|:---:|
 | <img src="docs/screenshots/01-library-scan.jpg" width="200" alt="Library scan"> | <img src="docs/screenshots/02-backup-progress.jpg" width="200" alt="Backup progress"> | <img src="docs/screenshots/03-backup-options.jpg" width="200" alt="Backup destination options"> | <img src="docs/screenshots/04-staging-cleanup.jpg" width="200" alt="Staging sheet cleanup modes"> |
 | Library scan with categories; "Scanning does not delete files." | Backup progress to Google Photos. | Backup destination options: Google Photos, Google Drive, or Folder or other cloud. | Staging sheet with 30-Day OS Trash and Permanent Delete cleanup modes. |
+
+### New in v5.1.0 (JVM-rendered previews, not device captures)
+
+| | | | |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/rendered/scan-card-first-run.png" width="200" alt="Scan card, first run (rendered)"> | <img src="docs/rendered/scan-card-running.png" width="200" alt="Scan progress with counts and Cancel (rendered)"> | <img src="docs/rendered/scan-card-low-storage.png" width="200" alt="Low storage message (rendered)"> | <img src="docs/rendered/empty-state.png" width="200" alt="Empty state (rendered)"> |
+| Scan card on first run. | Scan progress with counts and Cancel. | Low-storage explanation. | Empty state with Scan and Manage access. |
+
+These four images are rendered by JVM UI tests (Robolectric) from the app's real composables, with sample numbers. They are not captures from a phone.
 
 ## Privacy
 
